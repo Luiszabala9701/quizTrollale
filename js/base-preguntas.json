@@ -1,0 +1,171 @@
+[
+    {
+        "id": "0",
+        "pregunta":"¿Cuántos hechizos hay en el juego?",
+        "respuesta":"17",
+        "incorrecta1":"15",
+        "incorrecta2":"19",
+        "incorrecta3":"18"
+    },
+    {
+        "id": "1",
+        "pregunta":"¿Cuáles fueron las primeras legendarias?",
+        "respuesta":"Mago de hielo y Princesa",
+        "incorrecta1":"Tronco y princesa",
+        "incorrecta2":"Mago de hielo y Chispitas",
+        "incorrecta3":"Princesa y Chispitas"
+    },
+    {
+        "id": "2",
+        "pregunta":"¿Cuál empresa desarrolló el juego?",
+        "respuesta":"Supercell",
+        "incorrecta1":"Garena",
+        "incorrecta2":"Kefir",
+        "incorrecta3":"Mojang"
+    },
+    {
+        "id": "3",
+        "pregunta":"¿Cuál es la carta con más daño del juego?",
+        "respuesta":"Chispitas",
+        "incorrecta1":"P.E.K.K.A",
+        "incorrecta2":"Globo bombástico",
+        "incorrecta3":"Larry"
+    },
+    {
+        "id": "4",
+        "pregunta":"¿Cuál es la carta con menos daño del juego?",
+        "respuesta":"Hielo",
+        "incorrecta1":"Bola de nieve",
+        "incorrecta2":"P.E.K.K.A",
+        "incorrecta3":"Sabueso de lava"
+    },
+    {
+        "id": "5",
+        "pregunta":"¿Qué le gusta al mini P.E.K.K.A?",
+        "respuesta":"Pancakes",
+        "incorrecta1":"mariposas",
+        "incorrecta2":"Añaa",
+        "incorrecta3":"Coronas"
+    },
+    {
+        "id": "6",
+        "pregunta":"¿En qué año fue lanzado el juego?",
+        "respuesta":"2016",
+        "incorrecta1":"2015",
+        "incorrecta2":"2017",
+        "incorrecta3":"2014"
+    },
+    {
+        "id": "7",
+        "pregunta":"¿Cuál es la carta con más vida del juego?",
+        "respuesta":"Golem",
+        "incorrecta1":"Sabueso de lava",
+        "incorrecta2":"Esqueletos",
+        "incorrecta3":"Gigante eléctrico"
+    },
+    {
+        "id": "8",
+        "pregunta":"¿Cuál es el mazo más popular(actualmente)?",
+        "respuesta":"Montapuercos 2.6",
+        "incorrecta1":"Log bait",
+        "incorrecta2":"Ballesta",
+        "incorrecta3":"PEKKA ariete"
+    },
+
+    {
+        "id": "9",
+        "pregunta":"¿Cuántos campeones hay en el juego",
+        "respuesta":"5",
+        "incorrecta1":"4",
+        "incorrecta2":"3",
+        "incorrecta3":"6"
+    },
+    {
+        "id": "10",
+        "pregunta":"¿Cuántas cartas legendarias hay en el juego?",
+        "respuesta":"19",
+        "incorrecta1":"20",
+        "incorrecta2":"15",
+        "incorrecta3":"16"
+    },
+    {
+        "id": "11",
+        "pregunta":"¿Cuántas cartas hay en el juego?",
+        "respuesta":"109",
+        "incorrecta1":"107",
+        "incorrecta2":"110",
+        "incorrecta3":"106"
+    },
+    {
+        "id": "12",
+        "pregunta":"¿Cuántas cartas comunes hay en el juego?",
+        "respuesta":"28",
+        "incorrecta1":"25",
+        "incorrecta2":"26",
+        "incorrecta3":"30"
+    },
+    {
+        "id": "13",
+        "pregunta":"¿Cuántas cartas épicas hay en el juego?",
+        "respuesta":"29",
+        "incorrecta1":"22",
+        "incorrecta2":"30",
+        "incorrecta3":"32"
+    },
+    {
+        "id": "14",
+        "pregunta":"¿Cuántas cartas especiales hay en el juego?",
+        "respuesta":"28",
+        "incorrecta1":"30",
+        "incorrecta2":"31",
+        "incorrecta3":"25"
+    },
+    {
+        "id": "15",
+        "pregunta":"¿Cuántas cartas de tipo estructura hay en el juego?",
+        "respuesta":"11",
+        "incorrecta1":"12",
+        "incorrecta2":"13",
+        "incorrecta3":"10"
+    },
+    {
+        "id": "16",
+        "pregunta":"¿Cuántas cartas de tipo tropa hay en el juego?",
+        "respuesta":"81",
+        "incorrecta1":"79",
+        "incorrecta2":"90",
+        "incorrecta3":"75"
+    },
+    {
+        "id": "17",
+        "pregunta":"¿Cuántos caballeros hay en el juego?",
+        "respuesta":"3",
+        "incorrecta1":"5",
+        "incorrecta2":"2",
+        "incorrecta3":"1"
+    },
+    {
+        "id": "18",
+        "pregunta":"¿Qué dice el montapuercos?",
+        "respuesta":"hog rider",
+        "incorrecta1":"oh rider",
+        "incorrecta2":"jorrada",
+        "incorrecta3":"horrada"
+    },
+    {
+        "id": "19",
+        "pregunta":"¿Cuántas rarezas de cartas hay en el juego?",
+        "respuesta":"5",
+        "incorrecta1":"4",
+        "incorrecta2":"6",
+        "incorrecta3":"7"
+    },
+    {
+        "id": "19",
+        "pregunta":"¿Cuántas rarezas de cartas hay en el juego?",
+        "respuesta":"5",
+        "incorrecta1":"4",
+        "incorrecta2":"6",
+        "incorrecta3":"7"
+    }
+]
