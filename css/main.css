@@ -39,7 +39,7 @@ body{
     max-width: 330px;
     min-width: 300px;
     max-height: 210px;
-    min-height: 220px;
+    min-height: 240px;
     margin: auto 10% ;
     background-image: url("../src/fondo-azul-d.png");
     background-size: cover;
@@ -94,7 +94,8 @@ body{
     cursor: pointer;
     font-weight: 500;
     transition: background-color .5s ease-in;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    
 }
 
 .record{
@@ -165,7 +166,9 @@ body{
 
 .icons a.icons a:visited{
     color: #000;
-}{
+}
+
+.icons a{
     color: #000;
 }
 

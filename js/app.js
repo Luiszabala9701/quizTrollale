@@ -93,9 +93,20 @@ let btns=[
     btn2,
     btn3,
     btn4
-]
+];
+let numeros = [];
 
 // funciones
+
+
+function buscarN(n) {
+    if(numeros.indexOf(n) !== -1){
+      return buscarN(Math.floor(Math.random()*interprete_db.length))
+    }
+    else{
+        return numeros.unshift(n)
+    }
+}
 
 const readText= ruta_local=>{
     let texto = null;
@@ -115,7 +126,14 @@ const elegirPregunta= n=>{
 }
 
 const elegirPreguntaRandom = ()=>{
-    elegirPregunta(Math.floor(Math.random()*interprete_db.length))
+    if(numeros.length == 0){
+        elegirPregunta(Math.floor(Math.random()*interprete_db.length))
+        numeros.push(Math.floor(Math.random()*interprete_db.length))
+    }
+    else{
+        buscarN(Math.floor(Math.random()*interprete_db.length))
+        elegirPregunta(numeros[0])
+    }
 }
 
 const desordenarRespuestas = pregunta=>{
@@ -160,20 +178,19 @@ function oprimirBtn(i){
 }
 
 const siguientePregunta=()=>{
-    elegirPreguntaRandom();
-    for(let boton of btns){
-        boton.style.color="#000"
+    if(record==21){
+        alert("you win")
+        reiniciarGame()
+    }
+    else{
+        elegirPreguntaRandom();
+        for(let boton of btns){
+            boton.style.color="#000"
+        }
     }
 }
 
-// Eventos
-
-btn1.addEventListener("click", ()=>{oprimirBtn(0)});
-btn2.addEventListener("click", ()=>{oprimirBtn(1)});
-btn3.addEventListener("click", ()=>{oprimirBtn(2)});
-btn4.addEventListener("click", ()=>{oprimirBtn(3)});
-
-btn.addEventListener("click",e=>{
+const reiniciarGame = e=>{
     e.preventDefault();
     btn.style.display="none";
     siguientePregunta();
@@ -186,7 +203,17 @@ btn.addEventListener("click",e=>{
     contador.innerHTML= 0;
     record.style.display="none";
     contador.style.color="#d16b05"
-})
+    numeros=[];
+}
+
+// Eventos
+
+btn1.addEventListener("click", ()=>{oprimirBtn(0)});
+btn2.addEventListener("click", ()=>{oprimirBtn(1)});
+btn3.addEventListener("click", ()=>{oprimirBtn(2)});
+btn4.addEventListener("click", ()=>{oprimirBtn(3)});
+
+btn.addEventListener("click", reiniciarGame)
 
 // variables
 
