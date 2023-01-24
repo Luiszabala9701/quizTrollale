@@ -163,6 +163,12 @@ body{
     color: #000;
 }
 
+.icons a.icons a:visited{
+    color: #000;
+}{
+    color: #000;
+}
+
 .copyright{
     opacity: .8;
     text-align: center;
