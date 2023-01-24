@@ -11,6 +11,9 @@ const record = document.getElementById("record");
 const rAzul = document.querySelector(".r-azul");
 const rRojo = document.querySelector(".r-rojo");
 
+let musica= false;
+let audio= true;
+
 // audio 
 
 const kingCrying1 = document.getElementById("king_crying_01")
@@ -21,6 +24,9 @@ const kingHappy1 = document.getElementById("king_happy_01")
 const kingHappy2 = document.getElementById("king_happy_02")
 const kingHappy3 = document.getElementById("king_happy_03")
 const kingHappy4 = document.getElementById("king_happy_04")
+
+const iconMusic = document.getElementById("icon-music")
+const iconAudio = document.getElementById("icon-audio")
 
 const audioWin = n=>{
     if(n == 1){
@@ -84,7 +90,6 @@ const audioLose = n=>{
     else{kingCrying2.play()}
 }
 
-
 let pregunta;
 let posibles_respuestas=[];
 
@@ -97,7 +102,6 @@ let btns=[
 let numeros = [];
 
 // funciones
-
 
 function buscarN(n) {
     if(numeros.indexOf(n) !== -1){
@@ -157,8 +161,9 @@ function oprimirBtn(i){
         setTimeout(()=>{
             siguientePregunta()
         },1000)
-
-        audioWin(Math.round(Math.random()*10))
+        if(audio == true){
+            audioWin(Math.round(Math.random()*10))
+        }
     }
     else{
         btns[i].style.color = "#a00";
@@ -171,10 +176,10 @@ function oprimirBtn(i){
         pregunta_quiz.style.display="none";
         record.style.display="block";
         contador.style.color="#900"
-        audioLose(Math.round(Math.random()*10))
-
+        if(audio == true){
+            audioLose(Math.round(Math.random()*10))
+        }
     }
-
 }
 
 const siguientePregunta=()=>{
@@ -221,3 +226,40 @@ let base_preguntas = readText("js/base-preguntas.json");
 let interprete_db= JSON.parse(base_preguntas);
 
 elegirPreguntaRandom();
+
+const musicFondo = new Audio("../src/audio/musica-fondo.mp3");
+musicFondo.loop = true;
+
+const pausedMusic = ()=>{
+
+    if(musica==false){
+        musicFondo.pause();
+    }
+    else{
+        musicFondo.play();
+    }
+}
+
+iconMusic.addEventListener("click",()=>{
+    if(musica == true){
+        musica = false
+        iconMusic.style.opacity=".5"
+    }
+    else if(musica == false){
+        musica = true;
+        iconMusic.style.opacity="1"
+    }
+    pausedMusic()
+})
+
+iconAudio.addEventListener('click',()=>{
+    if(audio == true){
+        audio=false
+        iconAudio.style.opacity=".5"
+    }else{
+        audio = true
+        iconAudio.style.opacity="1"
+    }
+})
+
+iconMusic.style.opacity=".5"

@@ -39,7 +39,7 @@ body{
     max-width: 330px;
     min-width: 300px;
     max-height: 210px;
-    min-height: 240px;
+    min-height: 260px;
     margin: auto 10% ;
     background-image: url("../src/fondo-azul-d.png");
     background-size: cover;
@@ -114,9 +114,35 @@ body{
     text-align: center;
     font-weight: 600;
     margin-bottom: 5px;
-    margin-left: 100px;
+    margin-left: 50px;
     font-size: 30px;
 }
+
+.iconos-sonido{
+    display: inline-flex;
+    justify-content:left;
+}
+
+.audio,.music {
+    color: #000;
+    z-index: 15;
+    margin: 3px;
+    position: absolute;
+    margin-top: -63px ;
+    margin-left: 284px;
+    cursor: pointer;
+}
+
+.audio{
+    margin-left: 305px;
+}
+
+.audio:hover, .music:hover{
+    color: #020592;
+}
+
+
+
 
 .btn{
     padding:10px 15px;
@@ -177,5 +203,75 @@ body{
     text-align: center;
 }
 
+@media(min-width:413px){
+    .header img{
+        max-width: 400px;
+    }
 
+    main{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .contenido{
+        justify-content: center;
+        margin: 50px auto;
+        min-width: 350px;
+        min-height: 290px;
+    }
+
+    .audio,.music{
+        margin-left: 300px;
+    }
+
+    .audio{
+        margin-left: 325px;
+    }
+
+    .img-rey{
+        position: relative;
+        margin-left: 60px;
+    }
+
+    .contador{
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:376px){
+    .header h1{
+        font-size: 45px;
+    }
+
+    .audio,.music{
+        margin-left: 275px;
+    }
+
+    .audio{
+        margin-left: 298px;
+    }
+}
+
+@media(max-width:391px){
+    .header h1{
+        font-size: 42px;
+    }
+}
+
+@media(max-width:394px){
+    .header h1{
+        font-size: 45px;
+    }
+}
+
+@media(max-width:361px){
+    .audio,.music{
+        margin-left: 260px;
+    }
+    
+    .audio{
+        margin-left: 280px;
+    }
+}
 
