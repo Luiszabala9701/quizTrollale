@@ -183,7 +183,7 @@ function oprimirBtn(i){
 }
 
 const siguientePregunta=()=>{
-    if(record==21){
+    if(contador==21){
         alert("you win")
         reiniciarGame()
     }
@@ -262,4 +262,3 @@ iconAudio.addEventListener('click',()=>{
     }
 })
 
-iconMusic.style.opacity=".5"

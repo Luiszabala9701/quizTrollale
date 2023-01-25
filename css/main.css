@@ -137,12 +137,9 @@ body{
     margin-left: 305px;
 }
 
-.audio:hover, .music:hover{
-    color: #020592;
+.music{
+    opacity: .5;
 }
-
-
-
 
 .btn{
     padding:10px 15px;
@@ -227,6 +224,10 @@ body{
 
     .audio{
         margin-left: 325px;
+    }
+
+    .audio:hover, .music:hover{
+        color: #020592;
     }
 
     .img-rey{
